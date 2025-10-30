@@ -1,0 +1,80 @@
+{
+  "app": {
+    "title": "Gestion des Congés",
+    "user": "Utilisateur",
+    "light": "Clair",
+    "dark": "Sombre",
+    "toggleToDark": "🌙 Sombre",
+    "toggleToLight": "☀️ Clair"
+  },
+  "nav": {
+    "requester": "Demandeur",
+    "validator": "Validateur"
+  },
+  "requester": {
+    "newTitle": "Nouvelle Demande de Congé",
+    "startDate": "Date de début",
+    "endDate": "Date de fin",
+    "reason": "Motif",
+    "submit": "Envoyer",
+    "myRequests": "Mes Demandes",
+    "filter": "Filtrer",
+    "noRequests": "Aucune demande pour l’instant."
+  },
+  "validator": {
+    "allRequests": "Toutes les Demandes",
+    "noRequests": "Aucune demande pour ce filtre."
+  },
+  "placeholders": { 
+    "search": "Rechercher une raison ou un commentaire…", 
+    "addComment": "Ajouter un commentaire…",
+    "reason": "Optionnel, ex. voyage en famille" 
+  },
+  "table": {
+    "id": "ID",
+    "user": "Utilisateur",
+    "start": "Début",
+    "end": "Fin",
+    "status": "Statut",
+    "reason": "Motif",
+    "comments": "Commentaires",
+    "created": "Créée",
+    "action": "Action"
+  },
+  "form": {
+    "start": "Date de début",
+    "end": "Date de fin",
+    "reasonOptional": "Motif (optionnel)"
+  },
+  "paging": {
+    "itemsPerPage": "Éléments par page"
+  },
+  "status": {
+    "all": "Tous",
+    "Pending": "En attente",
+    "Approved": "Approuvée",
+    "Rejected": "Rejetée"
+  },
+  "actions": {
+  "approve": "Approuver",
+  "reject": "Rejeter",
+  "prev": "Précédent",
+  "next": "Suivant",
+  "delete": "Supprimer",
+  "cancel": "Annuler"
+  },
+  "messages": {
+    "requestSubmitted": "Votre demande de congé a été envoyée avec succès !",
+    "requestOverlapWarn": "Les dates sélectionnées se chevauchent avec une demande existante.",
+    "requestOverlapBlock": "Impossible d’envoyer — les dates sélectionnées se chevauchent avec une demande existante.",
+    "approved": "Demande approuvée.",
+    "rejected": "Demande rejetée.",
+    "deleted": "Demande supprimée.",
+    "confirmDelete": "Supprimer cette demande ?",
+    "deleteBlocked": "Seules les demandes en attente peuvent être supprimées.",
+    "actionFailed": "Un problème est survenu. Veuillez réessayer."
+  },
+  "errors": {
+    "dateOrder": "La date de début doit précéder ou égaler la date de fin"
+  }
+}

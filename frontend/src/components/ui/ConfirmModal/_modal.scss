@@ -1,0 +1,121 @@
+.confirm-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: var(--modal-overlay, rgba(0, 0, 0, 0.55));
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+}
+
+.confirm-modal {
+  background: var(--panel, #ffffff);
+  color: var(--text, #111827);
+  border-radius: 16px;
+  max-width: 440px;
+  width: min(92vw, 440px);
+  padding: 24px 20px 18px;
+  box-shadow: var(--shadow, 0 20px 40px rgba(0, 0, 0, 0.25));
+  border: 1px solid var(--border, #e5e7eb);
+  position: relative;
+  isolation: isolate;
+  transform-origin: center;
+  animation: modal-fade-in 220ms ease-out;
+
+  .confirm-modal::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: 16px;
+  padding: 1px;
+  background: linear-gradient(135deg, var(--accent-1, #7c3aed), var(--accent-2, #06b6d4));
+
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+
+  pointer-events: none;
+  opacity: 0.12;
+}
+
+  h2 {
+    font-size: 1.125rem;
+    line-height: 1.4;
+    margin: 0 0 0.75rem;
+    font-weight: 650;
+  }
+
+  p {
+    margin: 0 0 1.25rem;
+    color: var(--muted, #6b7280);
+    line-height: 1.55;
+  }
+}
+
+.confirm-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.confirm-modal button {
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform 120ms ease, background-color 120ms ease, border-color 120ms ease;
+  outline: none;
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 3px color-mix(in oklab, var(--focus, #60a5fa) 50%, transparent);
+  }
+}
+
+.btn-cancel {
+  background: var(--panel, #fff);
+  color: var(--text, #111827);
+  border: 1px solid var(--border, #e5e7eb);
+
+  &:hover {
+    background: color-mix(in oklab, var(--panel, #fff) 85%, #000 5%);
+  }
+}
+
+.btn-confirm {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: #fff;
+  border: 0;
+
+  &:hover {
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+  }
+}
+
+/* Motion-reduced users get a gentler effect */
+@media (prefers-reduced-motion: reduce) {
+  .confirm-modal {
+    animation: none;
+  }
+}
+
+@keyframes modal-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

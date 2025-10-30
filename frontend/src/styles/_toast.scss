@@ -1,0 +1,23 @@
+.toast-host {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  display: grid;
+  gap: 8px;
+  z-index: 9999;
+}
+
+.toast {
+  padding: 10px 12px;
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+  box-shadow: var(--shadow);
+  font-size: 14px;
+
+  &[data-type="error"] { border-color: #dc2626; }
+  &[data-type="success"] { border-color: #16a34a; }
+  &[data-type="info"] { border-color: #06b6d4; }
+}

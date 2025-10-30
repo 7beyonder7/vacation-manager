@@ -1,0 +1,31 @@
+$bg: #0f172a;
+$panel: #111827;
+$text: #e5e7eb;
+$muted: #9ca3af;
+$brand: #7c3aed;
+$brand-2: #06b6d4;
+
+$success: #16a34a;
+$pending: #d97706;
+$rejected: #dc2626;
+
+$radius: 14px;
+$shadow: 0 10px 25px rgba(0,0,0,0.25);
+
+
+$light-theme: (
+  bg: #f9fafb,
+  text: #111827,
+  panel: #ffffff,
+  muted: #6b7280,
+  border: #d1d5db
+);
+
+$dark-theme: (
+  bg: #0f172a,
+  text: #e5e7eb,
+  panel: #111827,
+  muted: #9ca3af,
+  border: #2b2f40
+);
+

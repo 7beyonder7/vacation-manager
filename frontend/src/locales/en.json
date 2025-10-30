@@ -1,0 +1,80 @@
+{
+  "app": {
+    "title": "Vacation Manager",
+    "user": "User",
+    "light": "Light",
+    "dark": "Dark",
+    "toggleToDark": "🌙 Dark",
+    "toggleToLight": "☀️ Light"
+  },
+  "nav": {
+    "requester": "Requester",
+    "validator": "Validator"
+  },
+  "requester": {
+    "newTitle": "New Vacation Request",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "reason": "Reason",
+    "submit": "Submit",
+    "myRequests": "My Requests",
+    "filter": "Filter",
+    "noRequests": "No requests yet."
+  },
+  "validator": {
+    "allRequests": "All Requests",
+    "noRequests": "No requests found for this filter."
+  },
+  "placeholders": { 
+    "search": "Search reason or comment...", 
+    "addComment": "Add a comment…", 
+    "reason": "Optional, e.g. Family trip" 
+  },
+  "form": {
+    "start": "Start date",
+    "end": "End date",
+    "reasonOptional": "Reason (optional)"
+  },
+  "table": {
+    "id": "ID",
+    "user": "User",
+    "start": "Start",
+    "end": "End",
+    "status": "Status",
+    "reason": "Reason",
+    "comments": "Comments",
+    "created": "Created",
+    "action": "Action"
+  },
+  "paging": {
+    "itemsPerPage": "Items per page"
+  },
+  "status": {
+    "all": "All",
+    "Pending": "Pending",
+    "Approved": "Approved",
+    "Rejected": "Rejected"
+  },
+  "actions": {
+    "approve": "Approve",
+    "reject": "Reject",
+    "prev": "Prev",
+    "next": "Next",
+    "delete": "Delete",
+    "cancel": "Cancel"
+  },
+  "messages": {
+    "requestSubmitted": "Your vacation request has been submitted successfully!",
+    "requestOverlapWarn": "Selected dates overlap an existing request.",
+    "requestOverlapBlock": "Cannot submit — the selected dates overlap an existing request.",
+    "approved": "Request approved.",
+    "rejected": "Request rejected.",
+    "deleted": "Request deleted.",
+    "confirmDelete": "Delete this request?",
+    "deleteBlocked": "Only pending requests can be deleted.",
+    "actionFailed": "Something went wrong. Please try again."
+  },
+  "errors": {
+    "dateOrder": "Start date must be before or equal to End date"
+  }
+}
