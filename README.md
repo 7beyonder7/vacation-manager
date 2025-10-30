@@ -26,7 +26,7 @@ FLUSH PRIVILEGES;
 
 ```bash
 cd server
-# then edit .env to match your local MySQL creds if needed
+cp .env.copy .env
 npm install
 node seed.js   # creates tables & seeds users and demo requests
 npm run dev    # starts API on http://localhost:3001
