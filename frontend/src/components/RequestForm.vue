@@ -55,7 +55,7 @@ async function onSubmit() {
     await API.post('/api/requests', {
       start_date: form.start_date,
       end_date: form.end_date,
-      reason: form.reason || null
+      reason: form.reason || ''
     })
     toast(t('messages.requestSubmitted'), 'success')
 
